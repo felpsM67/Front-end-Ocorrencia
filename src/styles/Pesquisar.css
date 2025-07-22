@@ -1,0 +1,84 @@
+.pesquisar-container {
+  background-color: #ffffff;
+  padding: 40px 60px;
+  border-radius: 12px;
+  margin: 40px auto;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+  width: 90vw;
+  max-width: 1400px;
+}
+
+.pesquisar-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #1565c0;
+  font-size: 28px;
+}
+
+.pesquisar-container label {
+  display: block;
+  margin: 16px 0 8px;
+  font-weight: 500;
+  color: #333;
+}
+
+.pesquisar-container input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+}
+
+.pesquisar-container select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+}
+
+.pesquisar-container p {
+  margin-top: 16px;
+  font-size: 16px;
+  color: #444;
+}
+
+.pesquisar-container strong {
+  color: #1565c0;
+}
+
+.botao-voltar {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.Card-pesquisar {
+    background-color: #eeeeee;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    flex: 1;
+    min-width: 280px;
+}
+.Button {
+  margin-top: 30px;
+  width: 80px;
+  padding: 14px;
+  background-color: #1565c0;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+Button:hover {
+  background-color: #0d47a1; 
+}

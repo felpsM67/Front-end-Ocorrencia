@@ -1,0 +1,78 @@
+/* src/global.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* :root permite que você declare variáveis globais de CSS */
+:root {
+  --cor-primaria: #007bff; /* Azul vibrante */
+  --cor-primaria-hover: #0056b3;
+  --cor-secundaria: #6c757d; /* Cinza para textos secundários */
+  --cor-fundo: #f4f7f6; /* Um cinza bem claro para o fundo */
+  --cor-card: #ffffff;   /* Branco para os cards */
+  --cor-texto: #333;
+  --cor-sombra: rgba(0, 0, 0, 0.1);
+  --cor-sucesso: #28a745;
+  --cor-perigo: #dc3545;
+  --raio-borda: 8px; /* Borda arredondada padrão */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+}
+
+h1, h2, h3 {
+  color: var(--cor-primaria);
+  margin-bottom: 1rem;
+}
+
+/* Estilo padrão para os containers principais das páginas */
+.page-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+/* Estilo padrão para botões */
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: var(--raio-borda);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+  background-color: var(--cor-primaria);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--cor-primaria-hover);
+}
+
+.btn-secondary {
+  background-color: var(--cor-secundaria);
+  color: white;
+}
+
+/* Estilo padrão para cards */
+.card {
+  background-color: var(--cor-card);
+  border-radius: var(--raio-borda);
+  padding: 2rem;
+  box-shadow: 0 4px 12px var(--cor-sombra);
+  width: 100%;
+}

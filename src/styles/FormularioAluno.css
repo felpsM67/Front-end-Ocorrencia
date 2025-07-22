@@ -1,0 +1,74 @@
+.formulario-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 900px;
+    margin: 40px auto;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .formulario-container h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #1565c0;
+  }
+  
+
+  .grupo-campos {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+
+  .card-aluno,
+  .card-responsavel {
+    background-color: #eeeeee;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    flex: 1;
+    min-width: 280px;
+  }
+
+  
+  .card-aluno h2,
+  .card-responsavel h2 {
+    color: #1565c0;
+    margin-bottom: 0px;
+  }
+  
+
+  label {
+    display: block;
+    margin: 12px 0 6px;
+    font-weight: 500;
+    color: #333;  
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+
+  
+  .btn-cadastrar {
+    margin-top: 30px;
+    width: 100%;
+    padding: 14px;
+    background-color: #1565c0;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-cadastrar:hover {
+    background-color: #0d47a1;
+  }
+  

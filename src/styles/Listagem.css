@@ -1,0 +1,66 @@
+.lista-container {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .ocorrencia-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Para responsividade */
+    padding: 1.5rem;
+    background-color: var(--cor-card);
+    border-radius: var(--raio-borda);
+    box-shadow: 0 2px 8px var(--cor-sombra);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .ocorrencia-card:hover {
+    box-shadow: 0 4px 15px var(--cor-sombra);
+  }
+    
+  .card-info h3 {
+    margin: 0 0 0.25rem 0;
+    color: var(--cor-texto);
+  }
+  
+  .card-info p {
+    color: var(--cor-secundaria);
+    font-size: 0.9rem;
+  }
+  
+  .card-ocorrencias {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    background-color: var(--cor-fundo);
+    border-radius: 20px;
+  }
+  
+  .card-action {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: var(--cor-primaria);
+    font-weight: 600;
+    padding: 0.5rem;
+    border-radius: var(--raio-borda);
+    transition: background-color 0.2s ease;
+  }
+  
+  .card-action:hover {
+    background-color: #e9ecef;
+  }
+
+.Card-listagem {
+    background-color: #eeeeee;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    flex: 1;
+    min-width: 280px;
+}

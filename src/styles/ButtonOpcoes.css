@@ -1,0 +1,52 @@
+/* Container do menu suspenso */
+.dropdown-menu {
+  position: relative;
+  display: inline-block;
+}
+
+/* Botão de três pontos */
+.dropdown-menu > button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 6px 10px;
+  color: #1565c0;
+}
+
+/* Menu de opções */
+.opcoes-menu {
+  position: absolute;
+  top: 0;
+  left: 100%; /* posiciona à direita do botão */
+  transform: translateX(10px); /* distância lateral opcional */
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 8px 0;
+  z-index: 10;
+  min-width: 130px;
+  border: 1px solid #ccc;
+}
+
+
+
+/* Botões internos */
+.dropdown-item {
+  background: none;
+  border: none;
+  width: 100%;
+  padding: 10px 16px;
+  text-align: left;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+/* Efeito hover */
+.dropdown-item:hover {
+  background-color: #f0f4fc;
+  color: #1565c0;
+}

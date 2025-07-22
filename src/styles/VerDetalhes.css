@@ -1,0 +1,27 @@
+.detalhes-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 900px;
+    margin: 40px auto;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .detalhes-container p {
+    margin: 10px 0;
+    font-size: 15px;
+    color: #333;
+  }
+  
+  .detalhes-container b {
+    color: #1565c0;
+    font-weight: 600;
+  }
+  
+  .detalhes-container hr {
+    margin: 30px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+  }
+  

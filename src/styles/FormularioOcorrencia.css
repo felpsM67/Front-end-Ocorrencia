@@ -1,0 +1,81 @@
+.formulario-ocorrencia {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 40px auto;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.formulario-ocorrencia h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #1565c0;
+}
+
+.formulario-ocorrencia p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.formulario-ocorrencia form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+
+.formulario-ocorrencia label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #333;
+}
+
+
+.formulario-ocorrencia input,
+.formulario-ocorrencia select,
+.formulario-ocorrencia textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: #ffffff;
+}
+
+
+.formulario-ocorrencia textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+
+.formulario-ocorrencia button[type="submit"] {
+  margin-top: 30px;
+  width: 100%;
+  padding: 14px;
+  background-color: #1565c0;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario-ocorrencia button[type="submit"]:hover {
+  background-color: #0d47a1;
+}
+
+.Card-Ocorrenia {
+    background-color: #eeeeee;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    flex: 1;
+    min-width: 280px;
+}
+
+

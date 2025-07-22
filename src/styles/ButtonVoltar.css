@@ -1,0 +1,17 @@
+.back {
+    background-color: #0d47a1;
+    margin-top: 20px;
+    background-color: transparent;
+    color: #1565c0;
+    border: 2px solid #1565c0;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+}
+
+
+.back:hover {
+    background-color: #e7e7e7;
+  }
