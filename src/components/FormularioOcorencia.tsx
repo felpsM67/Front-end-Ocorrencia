@@ -27,6 +27,17 @@ const Formulario = () => {
           </select>
         </label>
         <label>
+          Turma:
+          <select required>
+            <option>Selecione</option>
+            <option>A</option>
+            <option>B</option>
+            <option>C</option>
+            <option>D</option>
+          </select>
+        </label>
+        
+        <label>
           Nome do aluno:
           {/* <select required>
             <option value="">Selecione</option>
