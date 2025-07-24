@@ -9,11 +9,8 @@ const Home = () => {
   return (
     <div>
       <Navbar />
-
       <div className="container">
-        
         <h1> Ocorrencia</h1>
-
         <nav className="navegacao">
           <Link to="/Formulario"> Registrar Ocorrência</Link>
           <Link to="/Pesquisar"> Pesquisar Ocorrencia</Link>

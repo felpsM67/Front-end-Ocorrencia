@@ -3,79 +3,33 @@ import { Link } from "react-router-dom";
 import ButtonVoltar from "../Utilidades/ButtonVoltar";
 import "../styles/Listagem.css";
 
-const Listagem = () => {
+interface Ocorrencia {
+  id: number;
+  nome: string;
+  serie: string;
+  data: string;
+}
+
+interface Props {
+  ocorrencias: Ocorrencia[];
+}
+
+const Listagem: React.FC<Props> = ({ ocorrencias }) => {
   return (
-      <div className="lista-container">
-        <h2> Ocorrencias</h2>
-        <div className="Card-listagem">
-          <div className="ocorrencia-card">
-            <strong>João da Silva</strong>
-            <p>
-              <b>Série:</b> 7º ano A
-            </p>
-            <p>
-              <b>Data:</b> 29/07/2025
-            </p>
-            <Link to="/VerDetalhes">Ver Detalhes</Link>
+    <div className="lista-container">
+      <h2>Ocorrências</h2>
+      <div className="Card-listagem">
+        {ocorrencias.map((item) => (
+          <div key={item.id} className="ocorrencia-card">
+            <strong>{item.nome}</strong>
+            <p><b>Série:</b> {item.serie}</p>
+            <p><b>Data:</b> {new Date(item.data).toLocaleDateString("pt-BR")}</p>
+            <Link to={`/VerDetalhes/${item.id}`}>Ver Detalhes</Link>
           </div>
-
-          <div className="ocorrencia-card">
-            <strong>Maria Oliveira</strong>
-            <p>
-              <b>Série:</b> 8º ano B
-            </p>
-            <p>
-              <b>Data:</b> 29/07/2025
-            </p>
-            <Link to="/VerDetalhes">Ver Detalhes</Link>
-          </div>
-
-          <div className="ocorrencia-card">
-            <strong>Carlos Souza</strong>
-            <p>
-              <b>Série:</b> 9º ano C
-            </p>
-            <p>
-              <b>Data:</b> 29/07/2025
-            </p>
-            <Link to="/VerDetalhes">Ver Detalhes</Link>
-          </div>
-
-          <div className="ocorrencia-card">
-            <strong>Carlos Souza</strong>
-            <p>
-              <b>Série:</b> 9º ano C
-            </p>
-            <p>
-              <b>Data:</b> 29/07/2025
-            </p>
-            <Link to="/VerDetalhes">Ver Detalhes</Link>
-          </div>
-
-          <div className="ocorrencia-card">
-            <strong>Carlos Souza</strong>
-            <p>
-              <b>Série:</b> 9º ano C
-            </p>
-            <p>
-              <b>Data:</b> 29/07/2025
-            </p>
-            <Link to="/VerDetalhes">Ver Detalhes</Link>
-          </div>
-          <div className="ocorrencia-card">
-            <strong>Carlos Souza</strong>
-            <p>
-              <b>Série:</b> 9º ano C
-            </p>
-            <p>
-              <b>Data:</b> 29/07/2025
-            </p>
-            <Link to="/VerDetalhes">Ver Detalhes</Link>
-          </div>
-          
-        </div>
-        <ButtonVoltar></ButtonVoltar>
-        </div>
+        ))}
+      </div>
+      <ButtonVoltar />
+    </div>
   );
 };
 

@@ -8,7 +8,7 @@ interface ListagemProps {
   id: number
   nome: string;
   serie: string;
-  Data: Date;
+  data: string;
 }
 
 const Pesquisar = () =>  {
@@ -118,9 +118,8 @@ const Pesquisar = () =>  {
         ) : lista.length === 0 ? (
           <p>Nenhuma ocorrência encontrada</p>
         ) : (
-          lista.map((aluno) => (
-            <Listagem key={aluno.id} {...aluno} />
-          ))
+        <Listagem ocorrencias={lista} />
+
         )}
       <BotãoVoltar></BotãoVoltar>
       </div>
