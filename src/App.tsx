@@ -8,7 +8,7 @@ import Listagem from "./components/Listagem";
 import Pesquisar from "./components/Pesquisar"
 import VerDetalhes from "./components/VerDetalhes";
 import FormularioAluno from "./components/FormularioAluno";
-import FormularioProfessor from "./components/FormularioProfessor";
+import FormularioServidor from "./components/FormularioServidor";
 
 
 const App: React.FC = () => {
@@ -21,7 +21,7 @@ const App: React.FC = () => {
         <Route path="/Pesquisar" element={<Pesquisar/>} />
         <Route path="/VerDetalhes" element={<VerDetalhes />} />
         <Route path="/FormularioAluno" element={<FormularioAluno/>}/>
-        <Route path="/FormularioProfessor" element={<FormularioProfessor/>}/>
+        <Route path="/FormularioServidor" element={<FormularioServidor/>}/>
       </Routes>
     </Router>
   );

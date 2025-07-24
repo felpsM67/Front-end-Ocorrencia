@@ -18,7 +18,7 @@ const Home = () => {
           <Link to="/Formulario"> Registrar Ocorrência</Link>
           <Link to="/Pesquisar"> Pesquisar Ocorrencia</Link>
           <Link to="/FormularioAluno"> Cadastro De Aluno</Link>
-          <Link to="/FormularioProfessor">Cadastro De Professor</Link>
+          <Link to="/FormularioServidor">Cadastro De Servidor </Link>
         </nav>
       </div>
     </div>

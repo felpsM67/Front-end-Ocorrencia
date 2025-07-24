@@ -1,15 +1,23 @@
 import React from "react";
 import BotãoVoltar from "../Utilidades/ButtonVoltar";
-import "../styles/FormularioProfessor.css"
+import "../styles/FormularioServidor.css"
 
-const FormularioProfessor = () => {
-  return (
+const FormularioServidor = () => {
+  return (    
     <div className="formulario-container">
       <h1>Cadastro</h1>
     <p>Preencha todos os campos abaixo</p>
       <div className="grupo-campos">
         <div className="card-aluno">
-          <h2>Professor</h2>
+          <h2>Servidor</h2>
+          <label> Tipo de Servidor
+            <br></br>
+            <select>
+              <option>Selecione</option>
+              <option>Inspetor</option>
+              <option>Professor</option>
+            </select>
+          </label>  
           <label>Nome</label>
           <input type="text" />
           <label>CPF</label>
@@ -24,4 +32,4 @@ const FormularioProfessor = () => {
   );
 };
 
-export default FormularioProfessor;
+export default FormularioServidor;

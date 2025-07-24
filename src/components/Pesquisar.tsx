@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../styles/Pesquisar.css" 
 import Listagem from "./Listagem";
 import axios from "axios";
-
+import BotãoVoltar from "../Utilidades/ButtonVoltar";
 
 interface ListagemProps {
   id: number
@@ -122,6 +122,7 @@ const Pesquisar = () =>  {
             <Listagem key={aluno.id} {...aluno} />
           ))
         )}
+      <BotãoVoltar></BotãoVoltar>
       </div>
     </div>
   );
