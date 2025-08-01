@@ -3,6 +3,8 @@ import "../styles/Pesquisar.css"
 import Listagem from "./Listagem";
 import axios from "axios";
 import BotãoVoltar from "../Utilidades/ButtonVoltar";
+import Navbar from "../Utilidades/NavBar";
+
 
 interface ListagemProps {
   id: number
@@ -56,72 +58,75 @@ const Pesquisar = () =>  {
   };
 
   return (
-    <div className="pesquisar-container">
-      <h1>Pesquisar Ocorrências</h1>
+    <div>
+      <Navbar/>
+      <div className="pesquisar-container">
+        <h1>Pesquisar Ocorrências</h1>
 
-      <div className="Card-pesquisar">
-        <label htmlFor="Nome">Nome:</label>
-        <input
-          id="Nome"
-          value={nome}
-          onChange={(e) => setNome(e.target.value)}
-          placeholder="Digite o nome"
-        />
+        <div className="Card-pesquisar">
+          <label htmlFor="Nome">Nome:</label>
+          <input
+            id="Nome"
+            value={nome}
+            onChange={(e) => setNome(e.target.value)}
+            placeholder="Digite o nome"
+          />
 
-        <label htmlFor="Periodo">Período:</label>
-        <select
-          id="Periodo"
-          value={periodo}
-          onChange={(e) => setPeriodo(e.target.value)}
-        >
-          <option value="">Selecione</option>
-          <option value="Matutino">Matutino</option>
-          <option value="Vespertino">Vespertino</option>
-          <option value="Noturno">Noturno</option>
-        </select>
+          <label htmlFor="Periodo">Período:</label>
+          <select
+            id="Periodo"
+            value={periodo}
+            onChange={(e) => setPeriodo(e.target.value)}
+          >
+            <option value="">Selecione</option>
+            <option value="Matutino">Matutino</option>
+            <option value="Vespertino">Vespertino</option>
+            <option value="Noturno">Noturno</option>
+          </select>
 
-        <label htmlFor="serie">Série:</label>
-        <select
-          id="serie"
-          value={serieSelecionada}
-          onChange={(e) => setSerieSelecionada(e.target.value)}
-        >
-          <option value="">Selecione</option>
-          <option value="6º ano">6º ano</option>
-          <option value="7º ano">7º ano</option>
-          <option value="8º ano">8º ano</option>
-          <option value="9º ano">9º ano</option>
-          <option value="1º ano EM">1º ano EM</option>
-          <option value="2º ano EM">2º ano EM</option>
-          <option value="3º ano EM">3º ano EM</option>
-        </select>
+          <label htmlFor="serie">Série:</label>
+          <select
+            id="serie"
+            value={serieSelecionada}
+            onChange={(e) => setSerieSelecionada(e.target.value)}
+          >
+            <option value="">Selecione</option>
+            <option value="6º ano">6º ano</option>
+            <option value="7º ano">7º ano</option>
+            <option value="8º ano">8º ano</option>
+            <option value="9º ano">9º ano</option>
+            <option value="1º ano EM">1º ano EM</option>
+            <option value="2º ano EM">2º ano EM</option>
+            <option value="3º ano EM">3º ano EM</option>
+          </select>
 
-        <label htmlFor="Turma">Turma:</label>
-        <select
-          id="Turma"
-          value={turma}
-          onChange={(e) => setTurma(e.target.value)}
-        >
-          <option value="">Selecione</option>
-          <option value="A">A</option>
-          <option value="B">B</option>
-          <option value="C">C</option>
-          <option value="D">D</option>
-        </select>
+          <label htmlFor="Turma">Turma:</label>
+          <select
+            id="Turma"
+            value={turma}
+            onChange={(e) => setTurma(e.target.value)}
+          >
+            <option value="">Selecione</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+          </select>
 
-        <button className="Button" onClick={buscarAluno}>Buscar</button>
-      </div>
+          <button className="Button" onClick={buscarAluno}>Buscar</button>
+        </div>
 
-      <div className="resultado-listagem">
-        {carregando ? (
-          <p>Carregando...</p>
-        ) : lista.length === 0 ? (
-          <p>Nenhuma ocorrência encontrada</p>
-        ) : (
-        <Listagem ocorrencias={lista} />
+        <div className="resultado-listagem">
+          {carregando ? (
+            <p>Carregando...</p>
+          ) : lista.length === 0 ? (
+            <p>Nenhuma ocorrência encontrada</p>
+          ) : (
+          <Listagem ocorrencias={lista} />
 
-        )}
-      <BotãoVoltar></BotãoVoltar>
+          )}
+        <BotãoVoltar></BotãoVoltar>
+        </div>
       </div>
     </div>
   );

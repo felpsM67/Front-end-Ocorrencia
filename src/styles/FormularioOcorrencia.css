@@ -8,11 +8,7 @@
   font-family: 'Segoe UI', sans-serif;
 }
 
-.formulario-ocorrencia h2 {
-  text-align: center;
-  margin-bottom: 40px;
-  color: #1565c0;
-}
+
 
 .formulario-ocorrencia p {
   font-size: 18px;
@@ -77,5 +73,15 @@
     flex: 1;
     min-width: 280px;
 }
- 
+
+.formulario-ocorrencia h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #1565c0;
+} 
+
+.formulario-ocorrencia h2{
+  color: #1565c0;
+  margin-bottom: 0px;
+}
 

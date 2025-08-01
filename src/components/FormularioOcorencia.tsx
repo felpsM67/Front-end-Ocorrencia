@@ -5,7 +5,8 @@ import type { ChangeEvent, FormEvent } from "react";
 import '../styles/FormularioOcorrencia.css'
 import Navbar from "../Utilidades/NavBar";
 
-const Formulario = () => {
+
+const FormularioOcorrencia = () => {
   const [formulario, setFormulario] = useState({
     serie: "",
     turma: "",
@@ -52,12 +53,13 @@ const Formulario = () => {
     <div>
       <Navbar></Navbar>
       <div className="formulario-ocorrencia">
-        <h2>Registro de Ocorrência</h2>
-        <p>Digite os dados para registrar</p>
+        <h1>Registro de Ocorrência</h1>
+        <p>Digite os dados para registrar:</p>
         <div className="Card-Ocorrenia">
+          <h2>Ocorrencia</h2>
           <form onSubmit={handleSubmit}>
             <label>
-              Série:
+              Série
               <select
                 name="serie"
                 value={formulario.serie}
@@ -76,7 +78,7 @@ const Formulario = () => {
             </label>
 
             <label>
-              Turma:
+              Turma
               <select
                 name="turma"
                 value={formulario.turma}
@@ -92,7 +94,7 @@ const Formulario = () => {
             </label>
 
             <label>
-              Nome do aluno:
+              Nome do aluno
               <input
                 name="nomeAluno"
                 value={formulario.nomeAluno}
@@ -102,7 +104,7 @@ const Formulario = () => {
             </label>
 
             <label>
-              Tipo da ocorrência:
+              Tipo da ocorrência
               <select
                 name="tipoOcorrencia"
                 value={formulario.tipoOcorrencia}
@@ -120,7 +122,7 @@ const Formulario = () => {
             </label>
 
             <label>
-              Data do ocorrido:
+              Data do ocorrido
               <input
                 type="date"
                 name="dataOcorrido"
@@ -131,7 +133,7 @@ const Formulario = () => {
             </label>
 
             <label>
-              Descrição detalhada:
+              Descrição detalhada
               <textarea
                 name="descricao"
                 rows={2}
@@ -141,7 +143,7 @@ const Formulario = () => {
             </label>
 
             <label>
-              Responsável pelo registro:
+              Responsável pelo registro
               <input
                 type="text"
                 name="responsavel"
@@ -151,13 +153,15 @@ const Formulario = () => {
               />
             </label>
 
-            <button type="submit">Registrar</button>
+            
           </form>
-          <ButtonVoltar />
+          
         </div>
+        <button type="submit">Registrar</button>
+        <ButtonVoltar />
       </div>
     </div>
   );
 };
 
-export default Formulario;
+export default FormularioOcorrencia;
